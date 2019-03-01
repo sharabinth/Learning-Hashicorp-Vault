@@ -18,6 +18,7 @@ This takes about 3 to 10 minutes to complete on a MacBook Pro depedning on the d
 ## Validate Vault Cluster
 
 Vault UI http://192.168.50.152:8200/
+
 Initially login with the root VAULT_TOKEN.
 
 Consul UI http://192.168.50.152:8500/
