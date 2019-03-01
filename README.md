@@ -50,5 +50,10 @@ $ps -ef | grep vault
 $ps -ef | grep consul
 ```
 
+Check the status
+
+``` bash
+$vault status
+```
 
 
