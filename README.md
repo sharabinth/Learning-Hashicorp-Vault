@@ -13,5 +13,35 @@ $cd Learning-Hashicorp-Vault
 $vagrant up
 ```
 
-This takes about 3 to 10 minutes to complete on a MacBook Pro depedning on the download speed.
+This takes about 3 to 10 minutes to complete on a MacBook Pro depedning on the download speed. This will build a Dev Vault cluster along with a single node Consul.
+
+## Validate Vault Cluster
+
+Vault UI http://192.168.50.152:8200/
+Initially login with the root VAULT_TOKEN.
+
+Consul UI http://192.168.50.152:8500/
+
+
+Once setup, use 
+``` bash
+$vagrant ssh
+```
+to loginto the VM to view the Dev Vault cluster.
+
+VAULT_TOKEN environment variable is already set for this cluster.
+
+``` bash
+$echo VAULT_TOKEN
+```
+
+Check the Vault and Consul instances
+
+``` bash
+$ps -ef | grep vault
+....
+$ps -ef | grep consul
+```
+
+
 
