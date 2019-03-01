@@ -15,6 +15,12 @@ $vagrant up
 
 This takes about 3 to 10 minutes to complete on a MacBook Pro depedning on the download speed. This will build a Dev Vault cluster along with a single node Consul.
 
+## Verify Installation
+``` bash
+$vault
+```
+should display all the available commands
+
 ## Validate Vault Cluster
 
 Vault UI http://192.168.50.152:8200/
